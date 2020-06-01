@@ -16,3 +16,10 @@ for _ in range(0, 10):
 mylist = [x for x in range(1, 50) if x%3 == 0]
 print(mylist)
 
+# Fourth: Go through the string below and if the length of a word is even print "even"
+st = 'Print every word in this sentence that has an even number of letters'
+splitted = st.split(' ')
+for _ in splitted: 
+    if len(_)% 2 == 0:
+        print(_)
+
