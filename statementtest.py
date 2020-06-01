@@ -35,3 +35,8 @@ for _ in range(1, 100):
         print('Buzz')
     else:
         print(_)
+
+# Sixth: Use List Comprehension to create a list of the first letters of every word in the string below
+st = 'Create a list of the first letters of eevery word in this string'
+splitted = [x[0] for x in st.split(' ')] 
+print(splitted)
