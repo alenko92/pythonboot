@@ -11,3 +11,8 @@ for _ in splitted:
 for _ in range(0, 10):
     if _%2 == 0:
         print(_)
+
+# Third: Use a list Comprehension to create a list of all numbers between 1 and 50 that are divisible by 3
+mylist = [x for x in range(1, 50) if x%3 == 0]
+print(mylist)
+
