@@ -105,5 +105,24 @@ def paper_doll(text):
         newtext += i*3
     return newtext
 
-print(paper_doll('Hello'))
-print(paper_doll('Mississippi'))
+
+def blackjack(a, b, c):
+    '''
+    DOCSTRING:  This function returns the sum of the three integers given if its less or equal than 21, but if
+                it exceeds 21 and there is an 11, returns the total sum minus 10. If the sum exceeds 21, the 
+                function should return 'BUST'
+    INPUT: Three integers 'a', 'b' and 'c'
+    OUTPUT: Sum of the three integers or 'BUST'
+    '''
+    result = a + b + c
+    if result > 21:
+        if a == 11 or b == 11 or c == 11:
+            return result - 10
+        else: 
+            return 'BUST'
+    return result
+    
+
+print(blackjack(5, 6, 7))
+print(blackjack(9, 9, 9))
+print(blackjack(9, 9, 11))
