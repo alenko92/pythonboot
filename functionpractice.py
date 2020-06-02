@@ -40,7 +40,16 @@ def makes_twenty(n1, n2):
     if n1 is 20 or n2 is 20:
         return True
     else: 
-        if n1 + n2 is 20:
-            return True
-        else:
-            return False
+        return n1 + n2 is 20
+    
+
+# Level 1
+def old_macdonald(name):
+    '''
+    DOCSTRING:  This function capitalizes the first and fourth letters of a name
+    INPUT: string 'name'
+    OUTPUT: string 'NamE'
+    '''
+    return name[0].upper() + name[1:3] + name[3].upper() + name[4:]
+
+print(old_macdonald('macdonald'))
