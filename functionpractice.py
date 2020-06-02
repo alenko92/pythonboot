@@ -64,5 +64,21 @@ def master_yoda(text):
         newsentence.append(_)
     return newsentence
 
-print(master_yoda('I am home'))
-print(master_yoda('We are ready to go'))
+
+def almost_there(n):
+    '''
+    DOCSTRING:  This function returns True if n is within 10 of either 100 or 200
+    INPUT: integer 'n'
+    OUTPUT: 'True' or 'False'
+    '''
+    res = 100 - n
+    res2 = 200 - n
+    if abs(res) < 11 or abs(res2) < 11:
+        return True
+    else:
+        return False
+
+print(almost_there(90))
+print(almost_there(104))
+print(almost_there(150))
+print(almost_there(209))
