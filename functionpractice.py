@@ -123,6 +123,21 @@ def blackjack(a, b, c):
     return result
     
 
-print(blackjack(5, 6, 7))
-print(blackjack(9, 9, 9))
-print(blackjack(9, 9, 11))
+def summer_69(arr):
+    '''
+    DOCSTRING:  This function returns the sum of the numbers in the array, except ignoring sections of 
+                the array that are between a 6 and a 9
+    INPUT: Array of numbers
+    OUTPUT: Sum of the array
+    '''
+    sumof = 0
+    stack = []
+    for i in arr:
+        stack.append(i)
+        print(stack)
+        sumof += i
+    return sumof
+
+print(summer_69([1, 3, 5]))
+print(summer_69([4, 5, 6, 7, 8, 9]))
+print(summer_69([2, 1, 6, 8, 9, 11]))
