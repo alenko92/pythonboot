@@ -27,11 +27,20 @@ def animal_crackers(text):
     OUTPUT: 'True' or 'False'
     '''
     splitted = text.split(' ')
-    if splitted[0][0] == splitted[1][0]:
+    return splitted[0][0] == splitted[1][0]
+
+
+def makes_twenty(n1, n2):
+    '''
+    DOCSTRING:  This function return True if the sum of the integers inputed or one of the integers
+                is 20 and False if not
+    INPUT: Two integers 'n1' and 'n2'
+    OUTPUT: 'True' or 'False'a
+    '''
+    if n1 is 20 or n2 is 20:
         return True
     else: 
-        return False
-
-
-print(animal_crackers('Levelheaded Llama'))
-print(animal_crackers('Crazy Kangaroo'))
+        if n1 + n2 is 20:
+            return True
+        else:
+            return False
