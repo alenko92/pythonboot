@@ -52,4 +52,17 @@ def old_macdonald(name):
     '''
     return name[0].upper() + name[1:3] + name[3].upper() + name[4:]
 
-print(old_macdonald('macdonald'))
+
+def master_yoda(text):
+    '''
+    DOCSTRING:  This function returns a sentece with the words reversed
+    INPUT: string 'I am home'
+    OUTPUT: string 'home am I'
+    '''
+    newsentence = []
+    for _ in text.split(' ')[::-1]:
+        newsentence.append(_)
+    return newsentence
+
+print(master_yoda('I am home'))
+print(master_yoda('We are ready to go'))
