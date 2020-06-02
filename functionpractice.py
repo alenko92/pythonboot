@@ -44,6 +44,7 @@ def makes_twenty(n1, n2):
     
 
 # Level 1
+
 def old_macdonald(name):
     '''
     DOCSTRING:  This function capitalizes the first and fourth letters of a name
@@ -78,7 +79,31 @@ def almost_there(n):
     else:
         return False
 
-print(almost_there(90))
-print(almost_there(104))
-print(almost_there(150))
-print(almost_there(209))
+
+# Level2
+
+def has_33(nums):
+    '''
+    DOCSTRING:  This function returns True if the array contains a 3 next to a 3 somewhere
+    INPUT: array of numbers
+    OUTPUT: 'True' or 'False'
+    '''
+    for n in range(len(nums) -1):
+        if(nums[n] == nums[n+1]):
+            return True
+    return False
+
+
+def paper_doll(text):
+    '''
+    DOCSTRING:  This function returns a string where for every character in the original there are three characters
+    INPUT: string 'hello'
+    OUTPUT: string 'hhheeellllllooo'
+    '''
+    newtext = ''
+    for i in text:
+        newtext += i*3
+    return newtext
+
+print(paper_doll('Hello'))
+print(paper_doll('Mississippi'))
