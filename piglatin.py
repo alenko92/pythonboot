@@ -11,7 +11,8 @@ def piglatin(aword = 'n/a'):
     INPUT: a string
     OUTPUT: string + ay
     '''
-    if (aword[0] == 'a' or aword[0] == 'e' or aword[0] == 'i' or aword[0] == 'o' or aword[0] =='u'):
+    # Checks if word starts with a vowel
+    if (aword[0] in 'aeiou'):
         return aword + 'ay'
     else:
         return aword[1:] + aword[0] +'ay'
