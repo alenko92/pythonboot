@@ -139,8 +139,10 @@ def summer_69(arr):
         if marker == 'add':
             stack.append(i)
             sumof += i
+        if int(i) == 9:
+            marker = 'add'
     return sumof
 
 print(summer_69([1, 3, 5]))
 print(summer_69([4, 5, 6, 7, 8, 9]))
-print(summer_69([2, 1, 6, 9, 11, 12]))
+print(summer_69([2, 1, 6, 9, 11]))
