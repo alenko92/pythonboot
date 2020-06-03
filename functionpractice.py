@@ -131,13 +131,16 @@ def summer_69(arr):
     OUTPUT: Sum of the array
     '''
     sumof = 0
+    marker = 'add'
     stack = []
     for i in arr:
-        stack.append(i)
-        print(stack)
-        sumof += i
+        if int(i) == 6:
+            marker = 'remove'
+        if marker == 'add':
+            stack.append(i)
+            sumof += i
     return sumof
 
 print(summer_69([1, 3, 5]))
 print(summer_69([4, 5, 6, 7, 8, 9]))
-print(summer_69([2, 1, 6, 9, 11]))
+print(summer_69([2, 1, 6, 9, 11, 12]))
