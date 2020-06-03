@@ -186,10 +186,11 @@ def print_big(letter):
                                                             *   *
                                                             *   *
     '''
-    pattern_dictionary = {1: '  *  ', 2: '*    *', 3: '**** ', 4: '*****', 5: '    *', 6: '*    ', 
-                        7: ' *   ', 8: ''}
-    alphabet = {'A': [1, 2, 4, 3, 3]}
+    pattern_dictionary = {1: '  *  ', 2: '*   *', 3: '**** ', 4: '*****', 5: '    *', 6: '*    ', 
+                        7: ' *   ', 8: '   * '}
+    alphabet = {'A': [1, 2, 4, 2, 2], 'B': [3, 2, 3, 2, 3], 'C': [4, 6, 6, 6, 4]}
     for i in alphabet[letter.upper()]:
         print(pattern_dictionary[i])
+    return ''
 
-print(print_big('a'))
+print(print_big('c'))
