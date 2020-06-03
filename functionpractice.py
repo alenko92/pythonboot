@@ -1,4 +1,4 @@
-# Warmup
+# WARMUP
 
 def lesser_of_two_evens(a, b):
     '''
@@ -43,7 +43,7 @@ def makes_twenty(n1, n2):
         return n1 + n2 is 20
     
 
-# Level 1
+# LEVEL 1
 
 def old_macdonald(name):
     '''
@@ -80,7 +80,7 @@ def almost_there(n):
         return False
 
 
-# Level2
+# LEVEL 2
 
 def has_33(nums):
     '''
@@ -143,6 +143,36 @@ def summer_69(arr):
             marker = 'add'
     return sumof
 
-print(summer_69([1, 3, 5]))
-print(summer_69([4, 5, 6, 7, 8, 9]))
-print(summer_69([2, 1, 6, 9, 11]))
+# CHALLENGING
+
+def spy_game(nums):
+    '''
+    DOCSTRING:  This function returns True if a list of integers contains 007 in order
+    INPUT: List of integers
+    OUTPUT: 'True' or 'False'
+    '''
+    bond = []
+    for i in nums:
+        if int(i) == 0:
+            bond.append(i)
+        if 0 in bond and int(i) == 7:
+            bond.append(i)
+    print(bond)
+    return bond == [0, 0, 7]
+
+def count_primes(num):
+    '''
+    DOCSTRING:  This function returns the number of prime numbers that exist up to and including a given int
+    INPUT: Integer
+    OUTPUT: Count of prime numbers
+    '''
+    count = 2
+    for i in range(5, num + 1):
+        for n in range(2, i):
+            if (i % n) == 0:
+                break
+        else: 
+            count += 1
+    return count
+
+print(count_primes(200))
