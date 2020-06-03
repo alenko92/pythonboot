@@ -166,7 +166,7 @@ def count_primes(num):
     INPUT: Integer
     OUTPUT: Count of prime numbers
     '''
-    count = 2
+    count = 2   # Taking into account that by convention 0 and 1 are not prime and 2 and 3 are already prime
     for i in range(5, num + 1):
         for n in range(2, i):
             if (i % n) == 0:
@@ -175,4 +175,18 @@ def count_primes(num):
             count += 1
     return count
 
-print(count_primes(200))
+
+def print_big(letter):
+    '''
+    DOCSTRING:  This function returns a 5 x 5 representation of a letter that has been inputed
+    INPUT: A character such as 'a'
+    OUTPUT: 5 x 5 representation of of the letter such as:    *
+                                                            *   *
+                                                            *****
+                                                            *   *
+                                                            *   *
+    '''
+    
+    return 
+
+print(print_big('a'))
