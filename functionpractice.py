@@ -200,3 +200,19 @@ def print_big(letter):
         print(pattern_dictionary[i])
     return ''
 
+def myfunc(string):
+    '''
+    DOCSTRING:  This function returns a string with its odd indexes value in lowercase and even 
+                indexes value in uppercase
+    INPUT: 'String'
+    OUTPUT: 'sTrInG'
+    '''
+    allcaps = ''
+    for i in range(len(string)):
+        if i % 2 == 0:
+            allcaps += (string[i].lower())
+        else:
+            allcaps += (string[i].upper())
+    return allcaps
+
+print(myfunc('Anthropomorph'))
