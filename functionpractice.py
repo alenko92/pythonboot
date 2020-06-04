@@ -215,4 +215,4 @@ def myfunc(string):
             allcaps += (string[i].upper())
     return allcaps
 
-print(myfunc('Anthropomorph'))
+
