@@ -200,6 +200,8 @@ def print_big(letter):
         print(pattern_dictionary[i])
     return ''
 
+# OTHER
+
 def myfunc(string):
     '''
     DOCSTRING:  This function returns a string with its odd indexes value in lowercase and even 
